@@ -81,4 +81,5 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     width: 100vmin;
+    transition-duration: 3s;
 }
