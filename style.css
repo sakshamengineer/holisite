@@ -73,10 +73,12 @@ body{
 }
 .img1{
     margin: 10px;
+    height:29vmin ;
+    width:29vmin ;
 }
 .cube-container-1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 130vmin;
+    width: 100vmin;
 }
