@@ -76,6 +76,7 @@ body{
     margin: 10px;
     height:29vmin ;
     width:29vmin ;
+    object-fit: cover;
 }
 .cube-container-1{
     display: flex;
