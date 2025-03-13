@@ -1,0 +1,82 @@
+:root{
+    --boxsize : 15em;
+}
+@media (max-width: 500px) {
+    :root{
+        --boxsize : 11em;
+    }
+  }
+img{
+    height: var(--boxsize);
+    width: var(--boxsize);
+}
+h1{
+    text-align: center;
+    background: linear-gradient(50deg, #e40a0a, #097f09);
+    color: transparent;
+    background-clip: text;
+    font-size: 3em;
+    font-weight: bolder;
+    font-family: cursive;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(https://png.pngtree.com/background/20220718/original/pngtree-indian-holi-paint-splash-background-picture-image_1660670.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.cube-side{
+    position: absolute;
+    height: var(--boxsize);
+    width: var(--boxsize);
+    background-size: cover;
+}
+.cube{
+    height: var(--boxsize);
+    width: var(--boxsize);
+    text-align: center;
+    perspective: 100em;
+}
+.cube-container{
+    width: var(--boxsize);
+    height: var(--boxsize);
+    position: relative;
+    transform-style: preserve-3d;
+    transition-duration: 8s;
+    transform: rotateX(-30deg) rotateY(34deg);
+}
+.cube-side:nth-child(1){
+    transform: rotateY(0deg) translateZ(calc((var(--boxsize))/2));
+}
+.cube-side:nth-child(2){
+    transform: rotateY(90deg) translateZ(calc((var(--boxsize))/2));
+}
+.cube-side:nth-child(3){
+    transform: rotateY(180deg) translateZ(calc((var(--boxsize))/2));
+}
+.cube-side:nth-child(4){
+    transform: rotateY(-90deg) translateZ(calc((var(--boxsize))/2));
+}
+.cube-side:nth-child(5){
+    transform: rotateX(-90deg) translateZ(calc((var(--boxsize))/2));
+}
+.cube-side:nth-child(6){
+    transform: rotateX(90deg) translateZ(calc((var(--boxsize))/2));
+}
+.cube-container:hover{
+    transform: rotateX(360deg) rotateY(130deg) rotateZ(50deg);
+}
+.img1{
+    margin: 10px;
+}
+.cube-container-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 130vmin;
+}
